@@ -12,7 +12,11 @@ repositories {
     // mavenCentral()
     maven {
     url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
-    name = "gradletest"
+    // name = "gradletest"
+    credentials {
+        username = "gradletest"
+        password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
+    }
         authentication {
         create<BasicAuthentication>("basic")
     }
