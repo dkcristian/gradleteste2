@@ -15,7 +15,8 @@ repositories {
     // name = "gradletest"
     credentials {
         username = "gradletest"
-        password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
+        // password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
+        password = System.getenv("SYSTEM_ACCESSTOKEN")
     }
         authentication {
         create<BasicAuthentication>("basic")
