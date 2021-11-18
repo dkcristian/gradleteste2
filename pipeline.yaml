@@ -6,9 +6,8 @@ steps:
 - task: Gradle@2
   displayName: 'gradlew build'
   inputs:
-    # gradleWrapperFile: '$(Parameters.wrapperScript)'
-    gradleWrapperFile: "gradlew"
-    tasks: "build"
+    gradleWrapperFile: '$(Parameters.wrapperScript)'
+    tasks: '$(Parameters.tasks)'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
